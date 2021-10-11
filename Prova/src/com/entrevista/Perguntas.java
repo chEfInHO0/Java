@@ -19,16 +19,9 @@ public class Perguntas {
 	}
 	public void inserirDados() {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("ID: ");
-		int id = sc.nextInt();
-		if (id < 0){
-			setId(id);
-		}else {
-			System.out.println("Descrição: ");
-			String desc = sc.next();
-			setId(id);
+			System.out.println("Descrição da Pergunta para a Entrevista: ");
+			String desc = sc.nextLine();
 			setDescricao(desc);
-		}
 	}
 	public String info() {
 		return "ID: "+this.id+" "+"Pergunta: "+ this.descricao;
